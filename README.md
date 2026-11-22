@@ -2,7 +2,7 @@
 
 A reproducible COMP 151 machine-learning comparison for classifying websites as **phishing** or **legitimate** using an entropy-based decision tree and K-nearest neighbors.
 
-> Status: **Checkpoint 1 — dataset intake implemented.** No models have been trained and no accuracy claims are made yet. See [the intake report](docs/CHECKPOINT_1_DATASET_INTAKE.md) for findings and review items.
+> Status: **Checkpoint 2 — initial validation complete.** See [the validation report](docs/CHECKPOINT_2_VALIDATION.md) for measured results, label uncertainty, and limits.
 
 ## Scope (two weeks)
 - Official UCI Phishing Websites dataset (ID 327; 11,055 records, 30 features).
@@ -22,7 +22,13 @@ python -m pip install -r requirements.txt
 python -m pytest -q
 ```
 
-Python 3.11+ recommended. Tests cover dataset validation and duplicate/conflict inspection using synthetic fixtures, with network access blocked. Training code comes in a later checkpoint.
+Python 3.11+ recommended. Tests use synthetic fixtures with network access blocked.
+
+Run the baseline, tree, and KNN training/validation comparison (requires UCI access):
+
+```bash
+python -m scripts.validate_models
+```
 
 Run dataset intake from the repository root (requires access to official UCI servers):
 
@@ -46,4 +52,4 @@ The dataset provides **precomputed numeric features**, not raw website files. Th
 This is a course benchmark using a historical dataset donated in 2015, **not** an operational security scanner. Avoid claims of modern threat detection. Keep the test set unseen until final evaluation; tune settings on validation data only.
 
 ## Next checkpoint
-Review [Checkpoint 1](docs/CHECKPOINT_1_DATASET_INTAKE.md), especially target semantics, duplicate grouping, and contradictory labels, before authorizing splitting or model training.
+Review [Checkpoint 2](docs/CHECKPOINT_2_VALIDATION.md), especially the target-mapping assumption and selected configuration, before held-out test evaluation.
