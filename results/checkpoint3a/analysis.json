@@ -1,0 +1,1347 @@
+{
+  "train_rows": 7676,
+  "validation_rows": 1629,
+  "working_phishing_label": -1,
+  "label_entropy_bits": 0.9917523288121476,
+  "information_gain": [
+    {
+      "feature": "url_of_anchor",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.5085850893148315,
+      "information_gain_bits": 0.4831672394973161,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 2328,
+          "entropy_bits": 0.0912094817647942,
+          "weighted_bits": 0.027662281598285682,
+          "label_counts": {
+            "-1": 2301,
+            "1": 27
+          }
+        },
+        {
+          "value": 0,
+          "rows": 3734,
+          "entropy_bits": 0.8512129249903252,
+          "weighted_bits": 0.41407361411071836,
+          "label_counts": {
+            "-1": 1034,
+            "1": 2700
+          }
+        },
+        {
+          "value": 1,
+          "rows": 1614,
+          "entropy_bits": 0.31792714381557075,
+          "weighted_bits": 0.0668491936058274,
+          "label_counts": {
+            "-1": 93,
+            "1": 1521
+          }
+        }
+      ]
+    },
+    {
+      "feature": "sslfinal_state",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.5113158762195321,
+      "information_gain_bits": 0.48043645259261547,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 2408,
+          "entropy_bits": 0.6085918052153985,
+          "weighted_bits": 0.1909183255548045,
+          "label_counts": {
+            "-1": 2048,
+            "1": 360
+          }
+        },
+        {
+          "value": 0,
+          "rows": 863,
+          "entropy_bits": 0.13316254181583537,
+          "weighted_bits": 0.014971244604880916,
+          "label_counts": {
+            "-1": 847,
+            "1": 16
+          }
+        },
+        {
+          "value": 1,
+          "rows": 4405,
+          "entropy_bits": 0.5322252724893037,
+          "weighted_bits": 0.30542630605984666,
+          "label_counts": {
+            "-1": 533,
+            "1": 3872
+          }
+        }
+      ]
+    },
+    {
+      "feature": "prefix_suffix",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.8719700231265449,
+      "information_gain_bits": 0.11978230568560266,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 6696,
+          "entropy_bits": 0.9995880970010991,
+          "weighted_bits": 0.8719700231265449,
+          "label_counts": {
+            "-1": 3428,
+            "1": 3268
+          }
+        },
+        {
+          "value": 1,
+          "rows": 980,
+          "entropy_bits": -0.0,
+          "weighted_bits": -0.0,
+          "label_counts": {
+            "1": 980
+          }
+        }
+      ]
+    },
+    {
+      "feature": "web_traffic",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.8783633023868933,
+      "information_gain_bits": 0.11338902642525428,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1800,
+          "entropy_bits": 0.9374932913222502,
+          "weighted_bits": 0.21983948988796906,
+          "label_counts": {
+            "-1": 1163,
+            "1": 637
+          }
+        },
+        {
+          "value": 0,
+          "rows": 1828,
+          "entropy_bits": 0.9266287945486463,
+          "weighted_bits": 0.22067189114576935,
+          "label_counts": {
+            "-1": 1203,
+            "1": 625
+          }
+        },
+        {
+          "value": 1,
+          "rows": 4048,
+          "entropy_bits": 0.830274542565913,
+          "weighted_bits": 0.4378519213531548,
+          "label_counts": {
+            "-1": 1062,
+            "1": 2986
+          }
+        }
+      ]
+    },
+    {
+      "feature": "having_sub_domain",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.890043766972062,
+      "information_gain_bits": 0.10170856184008559,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 2274,
+          "entropy_bits": 0.995772470010557,
+          "weighted_bits": 0.2949956483590421,
+          "label_counts": {
+            "-1": 1224,
+            "1": 1050
+          }
+        },
+        {
+          "value": 0,
+          "rows": 2568,
+          "entropy_bits": 0.9552907454267772,
+          "weighted_bits": 0.3195917970630489,
+          "label_counts": {
+            "-1": 1602,
+            "1": 966
+          }
+        },
+        {
+          "value": 1,
+          "rows": 2834,
+          "entropy_bits": 0.7460842357860187,
+          "weighted_bits": 0.27545632154997096,
+          "label_counts": {
+            "-1": 602,
+            "1": 2232
+          }
+        }
+      ]
+    },
+    {
+      "feature": "links_in_tags",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9436544108438615,
+      "information_gain_bits": 0.04809791796828611,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 2765,
+          "entropy_bits": 0.9656461558928042,
+          "weighted_bits": 0.3478389292657118,
+          "label_counts": {
+            "-1": 1683,
+            "1": 1082
+          }
+        },
+        {
+          "value": 0,
+          "rows": 3056,
+          "entropy_bits": 0.9667066477575701,
+          "weighted_bits": 0.38486913959707325,
+          "label_counts": {
+            "-1": 1201,
+            "1": 1855
+          }
+        },
+        {
+          "value": 1,
+          "rows": 1855,
+          "entropy_bits": 0.8728971002947399,
+          "weighted_bits": 0.2109463419810764,
+          "label_counts": {
+            "-1": 544,
+            "1": 1311
+          }
+        }
+      ]
+    },
+    {
+      "feature": "request_url",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9504286919070593,
+      "information_gain_bits": 0.041323636905088335,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 3163,
+          "entropy_bits": 0.9773507790467207,
+          "weighted_bits": 0.40273065582657347,
+          "label_counts": {
+            "-1": 1861,
+            "1": 1302
+          }
+        },
+        {
+          "value": 1,
+          "rows": 4513,
+          "entropy_bits": 0.9315599656445401,
+          "weighted_bits": 0.5476980360804858,
+          "label_counts": {
+            "-1": 1567,
+            "1": 2946
+          }
+        }
+      ]
+    },
+    {
+      "feature": "sfh",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9541855639775698,
+      "information_gain_bits": 0.03756676483457777,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 5859,
+          "entropy_bits": 0.9999165959739289,
+          "weighted_bits": 0.763224509615848,
+          "label_counts": {
+            "-1": 2961,
+            "1": 2898
+          }
+        },
+        {
+          "value": 0,
+          "rows": 526,
+          "entropy_bits": 0.9421136101362776,
+          "weighted_bits": 0.06455859287802007,
+          "label_counts": {
+            "-1": 189,
+            "1": 337
+          }
+        },
+        {
+          "value": 1,
+          "rows": 1291,
+          "entropy_bits": 0.7515610335777654,
+          "weighted_bits": 0.1264024614837018,
+          "label_counts": {
+            "-1": 278,
+            "1": 1013
+          }
+        }
+      ]
+    },
+    {
+      "feature": "domain_registration_length",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9586989856912016,
+      "information_gain_bits": 0.03305334312094599,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 5102,
+          "entropy_bits": 0.9514604095261425,
+          "weighted_bits": 0.6324063326475221,
+          "label_counts": {
+            "-1": 1893,
+            "1": 3209
+          }
+        },
+        {
+          "value": 1,
+          "rows": 2574,
+          "entropy_bits": 0.973046777297313,
+          "weighted_bits": 0.3262926530436795,
+          "label_counts": {
+            "-1": 1535,
+            "1": 1039
+          }
+        }
+      ]
+    },
+    {
+      "feature": "page_rank",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9821311573610335,
+      "information_gain_bits": 0.009621171451114074,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 5669,
+          "entropy_bits": 0.9989034555712573,
+          "weighted_bits": 0.7377258584723108,
+          "label_counts": {
+            "-1": 2724,
+            "1": 2945
+          }
+        },
+        {
+          "value": 1,
+          "rows": 2007,
+          "entropy_bits": 0.9347558915146168,
+          "weighted_bits": 0.24440529888872278,
+          "label_counts": {
+            "-1": 704,
+            "1": 1303
+          }
+        }
+      ]
+    },
+    {
+      "feature": "google_index",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9826805897875495,
+      "information_gain_bits": 0.009071739024598124,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1075,
+          "entropy_bits": 0.9789938286707494,
+          "weighted_bits": 0.1371050502632954,
+          "label_counts": {
+            "-1": 629,
+            "1": 446
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6601,
+          "entropy_bits": 0.9832809939991174,
+          "weighted_bits": 0.845575539524254,
+          "label_counts": {
+            "-1": 2799,
+            "1": 3802
+          }
+        }
+      ]
+    },
+    {
+      "feature": "having_ip_address",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9843430507772164,
+      "information_gain_bits": 0.007409278034931188,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 2651,
+          "entropy_bits": 0.9992582844621397,
+          "weighted_bits": 0.3451060073096837,
+          "label_counts": {
+            "-1": 1368,
+            "1": 1283
+          }
+        },
+        {
+          "value": 1,
+          "rows": 5025,
+          "entropy_bits": 0.9764743374441356,
+          "weighted_bits": 0.6392370434675327,
+          "label_counts": {
+            "-1": 2060,
+            "1": 2965
+          }
+        }
+      ]
+    },
+    {
+      "feature": "age_of_domain",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9849715723481125,
+      "information_gain_bits": 0.006780756464035087,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 3664,
+          "entropy_bits": 0.999973993519371,
+          "weighted_bits": 0.4773195299967399,
+          "label_counts": {
+            "-1": 1821,
+            "1": 1843
+          }
+        },
+        {
+          "value": 1,
+          "rows": 4012,
+          "entropy_bits": 0.9712704578985882,
+          "weighted_bits": 0.5076520423513726,
+          "label_counts": {
+            "-1": 1607,
+            "1": 2405
+          }
+        }
+      ]
+    },
+    {
+      "feature": "statistical_report",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.985163393937119,
+      "information_gain_bits": 0.00658893487502854,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1083,
+          "entropy_bits": 0.9880844016082968,
+          "weighted_bits": 0.13940794775166562,
+          "label_counts": {
+            "-1": 611,
+            "1": 472
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6593,
+          "entropy_bits": 0.9846835742332081,
+          "weighted_bits": 0.8457554461854534,
+          "label_counts": {
+            "-1": 2817,
+            "1": 3776
+          }
+        }
+      ]
+    },
+    {
+      "feature": "url_length",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9874231018595339,
+      "information_gain_bits": 0.0043292269526137295,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 6232,
+          "entropy_bits": 0.9941257496891506,
+          "weighted_bits": 0.8071119947971322,
+          "label_counts": {
+            "-1": 2835,
+            "1": 3397
+          }
+        },
+        {
+          "value": 0,
+          "rows": 100,
+          "entropy_bits": 0.8812908992306927,
+          "weighted_bits": 0.011481121667935027,
+          "label_counts": {
+            "-1": 70,
+            "1": 30
+          }
+        },
+        {
+          "value": 1,
+          "rows": 1344,
+          "entropy_bits": 0.96424030348804,
+          "weighted_bits": 0.16882998539446664,
+          "label_counts": {
+            "-1": 523,
+            "1": 821
+          }
+        }
+      ]
+    },
+    {
+      "feature": "dnsrecord",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.987535280075846,
+      "information_gain_bits": 0.004217048736301576,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 2354,
+          "entropy_bits": 0.9999578224966343,
+          "weighted_bits": 0.3066572061173889,
+          "label_counts": {
+            "-1": 1186,
+            "1": 1168
+          }
+        },
+        {
+          "value": 1,
+          "rows": 5322,
+          "entropy_bits": 0.9820406042286953,
+          "weighted_bits": 0.6808780739584571,
+          "label_counts": {
+            "-1": 2242,
+            "1": 3080
+          }
+        }
+      ]
+    },
+    {
+      "feature": "links_pointing_to_page",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9877414149213217,
+      "information_gain_bits": 0.004010913890825862,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 360,
+          "entropy_bits": 0.9389320105807948,
+          "weighted_bits": 0.04403537308612378,
+          "label_counts": {
+            "-1": 128,
+            "1": 232
+          }
+        },
+        {
+          "value": 0,
+          "rows": 4287,
+          "entropy_bits": 0.9985676535368313,
+          "weighted_bits": 0.5576940503794158,
+          "label_counts": {
+            "-1": 2048,
+            "1": 2239
+          }
+        },
+        {
+          "value": 1,
+          "rows": 3029,
+          "entropy_bits": 0.9782198898694565,
+          "weighted_bits": 0.38601199145578213,
+          "label_counts": {
+            "-1": 1252,
+            "1": 1777
+          }
+        }
+      ]
+    },
+    {
+      "feature": "shortining_service",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9883811765433927,
+      "information_gain_bits": 0.00337115226875484,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 994,
+          "entropy_bits": 0.9419794807819523,
+          "weighted_bits": 0.12198118862653212,
+          "label_counts": {
+            "-1": 357,
+            "1": 637
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6682,
+          "entropy_bits": 0.995283793362739,
+          "weighted_bits": 0.8663999879168606,
+          "label_counts": {
+            "-1": 3071,
+            "1": 3611
+          }
+        }
+      ]
+    },
+    {
+      "feature": "having_at_symbol",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.989011483517889,
+      "information_gain_bits": 0.0027408452942585537,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1161,
+          "entropy_bits": 0.9989160383328897,
+          "weighted_bits": 0.15108670147270517,
+          "label_counts": {
+            "-1": 603,
+            "1": 558
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6515,
+          "entropy_bits": 0.9872464508025833,
+          "weighted_bits": 0.8379247820451838,
+          "label_counts": {
+            "-1": 2825,
+            "1": 3690
+          }
+        }
+      ]
+    },
+    {
+      "feature": "abnormal_url",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.990296674996708,
+      "information_gain_bits": 0.0014556538154395504,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1132,
+          "entropy_bits": 0.9667769535889864,
+          "weighted_bits": 0.14257315157148678,
+          "label_counts": {
+            "-1": 445,
+            "1": 687
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6544,
+          "entropy_bits": 0.9943651842622248,
+          "weighted_bits": 0.8477235234252213,
+          "label_counts": {
+            "-1": 2983,
+            "1": 3561
+          }
+        }
+      ]
+    },
+    {
+      "feature": "double_slash_redirecting",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9906470383559527,
+      "information_gain_bits": 0.0011052904561948962,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 980,
+          "entropy_bits": 0.9685128622465056,
+          "weighted_bits": 0.12365067808775085,
+          "label_counts": {
+            "-1": 388,
+            "1": 592
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6696,
+          "entropy_bits": 0.9938865085750773,
+          "weighted_bits": 0.8669963602682018,
+          "label_counts": {
+            "-1": 3040,
+            "1": 3656
+          }
+        }
+      ]
+    },
+    {
+      "feature": "on_mouseover",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9909937561479044,
+      "information_gain_bits": 0.0007585726642431734,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 924,
+          "entropy_bits": 0.9997262380518094,
+          "weighted_bits": 0.12034224126626783,
+          "label_counts": {
+            "-1": 453,
+            "1": 471
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6752,
+          "entropy_bits": 0.9897987304845147,
+          "weighted_bits": 0.8706515148816366,
+          "label_counts": {
+            "-1": 2975,
+            "1": 3777
+          }
+        }
+      ]
+    },
+    {
+      "feature": "port",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9910399388583895,
+      "information_gain_bits": 0.000712389953758108,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1069,
+          "entropy_bits": 0.9993933008221254,
+          "weighted_bits": 0.13918075020568682,
+          "label_counts": {
+            "-1": 519,
+            "1": 550
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6607,
+          "entropy_bits": 0.9896883808230885,
+          "weighted_bits": 0.8518591886527027,
+          "label_counts": {
+            "-1": 2909,
+            "1": 3698
+          }
+        }
+      ]
+    },
+    {
+      "feature": "https_token",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9910877763062248,
+      "information_gain_bits": 0.0006645525059227886,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1251,
+          "entropy_bits": 0.9777792740096741,
+          "weighted_bits": 0.15935407396900758,
+          "label_counts": {
+            "-1": 516,
+            "1": 735
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6425,
+          "entropy_bits": 0.99367905044988,
+          "weighted_bits": 0.8317337023372172,
+          "label_counts": {
+            "-1": 2912,
+            "1": 3513
+          }
+        }
+      ]
+    },
+    {
+      "feature": "redirect",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9911763414539256,
+      "information_gain_bits": 0.0005759873582219521,
+      "categories": [
+        {
+          "value": 0,
+          "rows": 6812,
+          "entropy_bits": 0.990127797593998,
+          "weighted_bits": 0.8786803748319847,
+          "label_counts": {
+            "-1": 3008,
+            "1": 3804
+          }
+        },
+        {
+          "value": 1,
+          "rows": 864,
+          "entropy_bits": 0.999443333090299,
+          "weighted_bits": 0.1124959666219409,
+          "label_counts": {
+            "-1": 420,
+            "1": 444
+          }
+        }
+      ]
+    },
+    {
+      "feature": "rightclick",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9915447136887762,
+      "information_gain_bits": 0.00020761512337141852,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 331,
+          "entropy_bits": 0.9994666318227384,
+          "weighted_bits": 0.0430984178130962,
+          "label_counts": {
+            "-1": 161,
+            "1": 170
+          }
+        },
+        {
+          "value": 1,
+          "rows": 7345,
+          "entropy_bits": 0.9911877150635424,
+          "weighted_bits": 0.94844629587568,
+          "label_counts": {
+            "-1": 3267,
+            "1": 4078
+          }
+        }
+      ]
+    },
+    {
+      "feature": "submitting_to_email",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9915586593904482,
+      "information_gain_bits": 0.00019366942169940504,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1419,
+          "entropy_bits": 0.9961960376800109,
+          "weighted_bits": 0.18415869951380084,
+          "label_counts": {
+            "-1": 658,
+            "1": 761
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6257,
+          "entropy_bits": 0.9905069669191537,
+          "weighted_bits": 0.8073999598766474,
+          "label_counts": {
+            "-1": 2770,
+            "1": 3487
+          }
+        }
+      ]
+    },
+    {
+      "feature": "popupwindow",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9916877422070937,
+      "information_gain_bits": 6.458660505392899e-05,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1510,
+          "entropy_bits": 0.9885488356869161,
+          "weighted_bits": 0.19446440097540948,
+          "label_counts": {
+            "-1": 660,
+            "1": 850
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6166,
+          "entropy_bits": 0.9924564332297126,
+          "weighted_bits": 0.7972233412316841,
+          "label_counts": {
+            "-1": 2768,
+            "1": 3398
+          }
+        }
+      ]
+    },
+    {
+      "feature": "iframe",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.991710036038912,
+      "information_gain_bits": 4.229277323564151e-05,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 695,
+          "entropy_bits": 0.9875976083823717,
+          "weighted_bits": 0.0894190122232606,
+          "label_counts": {
+            "-1": 302,
+            "1": 393
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6981,
+          "entropy_bits": 0.9921194526298438,
+          "weighted_bits": 0.9022910238156513,
+          "label_counts": {
+            "-1": 3126,
+            "1": 3855
+          }
+        }
+      ]
+    },
+    {
+      "feature": "favicon",
+      "entropy_before_bits": 0.9917523288121476,
+      "conditional_entropy_bits": 0.9917155362006774,
+      "information_gain_bits": 3.679261147016e-05,
+      "categories": [
+        {
+          "value": -1,
+          "rows": 1448,
+          "entropy_bits": 0.9893166575837489,
+          "weighted_bits": 0.18662461180058212,
+          "label_counts": {
+            "-1": 636,
+            "1": 812
+          }
+        },
+        {
+          "value": 1,
+          "rows": 6228,
+          "entropy_bits": 0.9922732716273495,
+          "weighted_bits": 0.8050909244000953,
+          "label_counts": {
+            "-1": 2792,
+            "1": 3436
+          }
+        }
+      ]
+    }
+  ],
+  "tree_importances": {
+    "depth_3": [
+      {
+        "feature": "sslfinal_state",
+        "importance": 0.7145762575154387
+      },
+      {
+        "feature": "url_of_anchor",
+        "importance": 0.25218596855714104
+      },
+      {
+        "feature": "links_in_tags",
+        "importance": 0.025482054363997683
+      },
+      {
+        "feature": "prefix_suffix",
+        "importance": 0.007755719563422587
+      },
+      {
+        "feature": "abnormal_url",
+        "importance": 0.0
+      },
+      {
+        "feature": "age_of_domain",
+        "importance": 0.0
+      },
+      {
+        "feature": "dnsrecord",
+        "importance": 0.0
+      },
+      {
+        "feature": "domain_registration_length",
+        "importance": 0.0
+      },
+      {
+        "feature": "double_slash_redirecting",
+        "importance": 0.0
+      },
+      {
+        "feature": "favicon",
+        "importance": 0.0
+      },
+      {
+        "feature": "google_index",
+        "importance": 0.0
+      },
+      {
+        "feature": "having_at_symbol",
+        "importance": 0.0
+      },
+      {
+        "feature": "having_ip_address",
+        "importance": 0.0
+      },
+      {
+        "feature": "having_sub_domain",
+        "importance": 0.0
+      },
+      {
+        "feature": "https_token",
+        "importance": 0.0
+      },
+      {
+        "feature": "iframe",
+        "importance": 0.0
+      },
+      {
+        "feature": "links_pointing_to_page",
+        "importance": 0.0
+      },
+      {
+        "feature": "on_mouseover",
+        "importance": 0.0
+      },
+      {
+        "feature": "page_rank",
+        "importance": 0.0
+      },
+      {
+        "feature": "popupwindow",
+        "importance": 0.0
+      },
+      {
+        "feature": "port",
+        "importance": 0.0
+      },
+      {
+        "feature": "redirect",
+        "importance": 0.0
+      },
+      {
+        "feature": "request_url",
+        "importance": 0.0
+      },
+      {
+        "feature": "rightclick",
+        "importance": 0.0
+      },
+      {
+        "feature": "sfh",
+        "importance": 0.0
+      },
+      {
+        "feature": "shortining_service",
+        "importance": 0.0
+      },
+      {
+        "feature": "statistical_report",
+        "importance": 0.0
+      },
+      {
+        "feature": "submitting_to_email",
+        "importance": 0.0
+      },
+      {
+        "feature": "url_length",
+        "importance": 0.0
+      },
+      {
+        "feature": "web_traffic",
+        "importance": 0.0
+      }
+    ],
+    "depth_5": [
+      {
+        "feature": "sslfinal_state",
+        "importance": 0.644120333765784
+      },
+      {
+        "feature": "url_of_anchor",
+        "importance": 0.22732088916984994
+      },
+      {
+        "feature": "web_traffic",
+        "importance": 0.050572561343970285
+      },
+      {
+        "feature": "links_in_tags",
+        "importance": 0.038713487287775364
+      },
+      {
+        "feature": "prefix_suffix",
+        "importance": 0.02498965205343602
+      },
+      {
+        "feature": "request_url",
+        "importance": 0.010232905175114725
+      },
+      {
+        "feature": "having_ip_address",
+        "importance": 0.00262320535845298
+      },
+      {
+        "feature": "having_at_symbol",
+        "importance": 0.0014269658456166653
+      },
+      {
+        "feature": "abnormal_url",
+        "importance": 0.0
+      },
+      {
+        "feature": "age_of_domain",
+        "importance": 0.0
+      },
+      {
+        "feature": "dnsrecord",
+        "importance": 0.0
+      },
+      {
+        "feature": "domain_registration_length",
+        "importance": 0.0
+      },
+      {
+        "feature": "double_slash_redirecting",
+        "importance": 0.0
+      },
+      {
+        "feature": "favicon",
+        "importance": 0.0
+      },
+      {
+        "feature": "google_index",
+        "importance": 0.0
+      },
+      {
+        "feature": "having_sub_domain",
+        "importance": 0.0
+      },
+      {
+        "feature": "https_token",
+        "importance": 0.0
+      },
+      {
+        "feature": "iframe",
+        "importance": 0.0
+      },
+      {
+        "feature": "links_pointing_to_page",
+        "importance": 0.0
+      },
+      {
+        "feature": "on_mouseover",
+        "importance": 0.0
+      },
+      {
+        "feature": "page_rank",
+        "importance": 0.0
+      },
+      {
+        "feature": "popupwindow",
+        "importance": 0.0
+      },
+      {
+        "feature": "port",
+        "importance": 0.0
+      },
+      {
+        "feature": "redirect",
+        "importance": 0.0
+      },
+      {
+        "feature": "rightclick",
+        "importance": 0.0
+      },
+      {
+        "feature": "sfh",
+        "importance": 0.0
+      },
+      {
+        "feature": "shortining_service",
+        "importance": 0.0
+      },
+      {
+        "feature": "statistical_report",
+        "importance": 0.0
+      },
+      {
+        "feature": "submitting_to_email",
+        "importance": 0.0
+      },
+      {
+        "feature": "url_length",
+        "importance": 0.0
+      }
+    ],
+    "unrestricted": [
+      {
+        "feature": "sslfinal_state",
+        "importance": 0.48801538021351887
+      },
+      {
+        "feature": "url_of_anchor",
+        "importance": 0.17491842507015046
+      },
+      {
+        "feature": "web_traffic",
+        "importance": 0.046035302557795754
+      },
+      {
+        "feature": "links_in_tags",
+        "importance": 0.043458449790533454
+      },
+      {
+        "feature": "having_sub_domain",
+        "importance": 0.031409651649830755
+      },
+      {
+        "feature": "prefix_suffix",
+        "importance": 0.024517508935746894
+      },
+      {
+        "feature": "links_pointing_to_page",
+        "importance": 0.020273428523631537
+      },
+      {
+        "feature": "request_url",
+        "importance": 0.018713585645141664
+      },
+      {
+        "feature": "sfh",
+        "importance": 0.017339830985496314
+      },
+      {
+        "feature": "age_of_domain",
+        "importance": 0.01563861609009288
+      },
+      {
+        "feature": "url_length",
+        "importance": 0.012198779726714255
+      },
+      {
+        "feature": "having_ip_address",
+        "importance": 0.012143927400904014
+      },
+      {
+        "feature": "dnsrecord",
+        "importance": 0.01204923164123025
+      },
+      {
+        "feature": "page_rank",
+        "importance": 0.010906018290877681
+      },
+      {
+        "feature": "google_index",
+        "importance": 0.010814368145607746
+      },
+      {
+        "feature": "domain_registration_length",
+        "importance": 0.009625889518169194
+      },
+      {
+        "feature": "submitting_to_email",
+        "importance": 0.006309310551591893
+      },
+      {
+        "feature": "redirect",
+        "importance": 0.0058290690934362805
+      },
+      {
+        "feature": "https_token",
+        "importance": 0.005786739719331158
+      },
+      {
+        "feature": "having_at_symbol",
+        "importance": 0.004843232476135014
+      },
+      {
+        "feature": "favicon",
+        "importance": 0.004624662422714543
+      },
+      {
+        "feature": "popupwindow",
+        "importance": 0.0036977568974277462
+      },
+      {
+        "feature": "double_slash_redirecting",
+        "importance": 0.0036319755832906492
+      },
+      {
+        "feature": "rightclick",
+        "importance": 0.003439308916647696
+      },
+      {
+        "feature": "statistical_report",
+        "importance": 0.0033987974800195626
+      },
+      {
+        "feature": "on_mouseover",
+        "importance": 0.0030653257058803635
+      },
+      {
+        "feature": "shortining_service",
+        "importance": 0.002708429779562908
+      },
+      {
+        "feature": "abnormal_url",
+        "importance": 0.002169629777741921
+      },
+      {
+        "feature": "iframe",
+        "importance": 0.001518363644472196
+      },
+      {
+        "feature": "port",
+        "importance": 0.000919003766306464
+      }
+    ]
+  },
+  "diagnostics": [
+    {
+      "model": "tree_depth_5",
+      "partition": "train",
+      "accuracy": 0.9179260031266284,
+      "phishing_f1": 0.9031960663798402
+    },
+    {
+      "model": "tree_depth_5",
+      "partition": "validation",
+      "accuracy": 0.9386126457949663,
+      "phishing_f1": 0.9228395061728395
+    },
+    {
+      "model": "tree_unrestricted",
+      "partition": "train",
+      "accuracy": 0.9891870766023971,
+      "phishing_f1": 0.9878885159784037
+    },
+    {
+      "model": "tree_unrestricted",
+      "partition": "validation",
+      "accuracy": 0.9355432780847146,
+      "phishing_f1": 0.9246231155778895
+    },
+    {
+      "model": "knn_k_9",
+      "partition": "train",
+      "accuracy": 0.9659979155810318,
+      "phishing_f1": 0.9614987461277474
+    },
+    {
+      "model": "knn_k_9",
+      "partition": "validation",
+      "accuracy": 0.954573357888275,
+      "phishing_f1": 0.9452662721893491
+    }
+  ],
+  "tree_structure": {
+    "depth_3": {
+      "depth": 3,
+      "leaves": 7
+    },
+    "depth_5": {
+      "depth": 5,
+      "leaves": 18
+    },
+    "unrestricted": {
+      "depth": 19,
+      "leaves": 392
+    }
+  }
+}
