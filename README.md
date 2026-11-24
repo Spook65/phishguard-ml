@@ -14,7 +14,7 @@ The fixed seed 42 produces 7,676 training, 1,629 validation, and 1,750 held-out 
 
 ## Models and final held-out results
 
-The majority baseline learns its label from training data. Both trees use scikit-learn's `DecisionTreeClassifier(criterion="entropy", random_state=42)`; this is not an exact implementation of ID3. KNN uses `n_neighbors=9` and Hamming distance, which counts differences across the 30 discrete feature values. **KNN k=9 was selected by validation phishing F1 before test evaluation.** The unrestricted tree and depth-5 tree were retained for the planned comparison and feature analysis.
+The majority baseline learns its label from training data. Both trees use scikit-learn's `DecisionTreeClassifier(criterion="entropy", random_state=42)`; this is not an exact implementation of ID3. KNN uses `n_neighbors=9` and Hamming distance, the fraction of the 30 discrete feature values that differ. **KNN k=9 was selected by validation phishing F1 before test evaluation.** The unrestricted tree and depth-5 tree were retained for the planned comparison and feature analysis.
 
 | Model | Test accuracy | Phishing precision | Phishing recall | Phishing F1 |
 | --- | ---: | ---: | ---: | ---: |
@@ -74,6 +74,6 @@ For methods, numerical examples, error analysis, and references, read the [final
 
 ## Limitations, attribution, and licensing
 
-This is a **historical academic benchmark, not a production phishing detection system**. No live phishing sites are visited. Identical feature vectors with conflicting labels, unavailable website identities and dates, and changes in phishing techniques limit what the scores imply about new sites. The published class-name mapping is disputed, and UCI's available metadata does not explicitly resolve it; phishing-class metrics use the declared working interpretation, while the original labels and numeric results remain unchanged. See the [label evidence](docs/CHECKPOINT_1B_EVALUATION_PROTOCOL.md) and [report limitations](docs/FINAL_PROJECT_REPORT.md#limitations-and-conclusions).
+This is a **historical academic benchmark, not a production phishing detection system**. No live phishing sites are visited. Identical feature vectors with conflicting labels, unavailable website identities and dates, and changes in phishing techniques limit what the scores imply about new sites. The published class-name mapping is disputed, and UCI's available metadata does not explicitly resolve it; phishing-class metrics use the declared working interpretation, while the original labels and numeric results remain unchanged. See the [label evidence](docs/CHECKPOINT_1B_EVALUATION_PROTOCOL.md) and [report limitations](docs/FINAL_PROJECT_REPORT.md#10-limitations-and-conclusions).
 
 Dataset: Mohammad, R. & McCluskey, L. (2012). *Phishing Websites*. UCI Machine Learning Repository. [DOI: 10.24432/C51W2X](https://doi.org/10.24432/C51W2X). The dataset is licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The repository does not currently declare a separate license for its code.

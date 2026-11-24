@@ -1,5 +1,7 @@
 # First Codex task: dataset inspection ONLY
 
+> Historical kickoff prompt for Checkpoint 1. The project is complete; see the [README](../README.md) and [final research report](FINAL_PROJECT_REPORT.md) for the finished experiment.
+
 Recommended model: newest GPT-6 coding model available to you in Codex.
 Reasoning effort: Medium for this first task; use High later for diagnosing leakage or model evaluation.
 Thread: NEW, in this repository, separate from SecureAgent Lab.
