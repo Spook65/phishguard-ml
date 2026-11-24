@@ -40,11 +40,14 @@ class PhishingDataset:
     metadata: dict
 
 
-def validate_dataset(features, targets, *, expected_rows=EXPECTED_ROWS):
+def validate_dataset(features, targets, *, expected_rows=EXPECTED_ROWS, check_target_values=True):
     """Fail on schema drift, missing values, misalignment, or invalid categories.
 
     expected_rows is adjustable for small offline test fixtures. Production
     loading always uses the official row count. Original labels are preserved.
+    When check_target_values is false, only target shape, name, index, and
+    integer dtype are checked; target contents are deferred until preflight
+    has passed. The default retains full validation for all existing callers.
     """
     if not isinstance(features, pd.DataFrame) or not isinstance(targets, pd.DataFrame):
         raise ValueError("Features and targets must be pandas DataFrames")
@@ -56,26 +59,27 @@ def validate_dataset(features, targets, *, expected_rows=EXPECTED_ROWS):
         raise ValueError("Expected one target column named result with matching row count")
     if not features.index.equals(targets.index) or not features.index.is_unique:
         raise ValueError("Feature and target indices must match and be unique")
-    if features.isna().any().any() or targets.isna().any().any():
+    if features.isna().any().any() or (check_target_values and targets.isna().any().any()):
         raise ValueError("Missing values found")
     for name, allowed in FEATURE_VALUES.items():
         if not is_integer_dtype(features[name]) or not set(features[name]).issubset(allowed):
             raise ValueError(f"Invalid integer categories in {name}; allowed {sorted(allowed)}")
     target = targets["result"]
-    if not is_integer_dtype(target) or set(target) != set(LABEL_MAPPING):
+    if not is_integer_dtype(target) or (check_target_values and set(target) != set(LABEL_MAPPING)):
         raise ValueError("Expected both integer target labels -1 and 1")
 
 
-def load_dataset():
+def load_dataset(*, check_target_values=True):
     """Fetch only precomputed UCI data via ucimlrepo; never fetch website URLs.
 
     Network errors propagate: there is no fallback data or silent substitution.
+    The final evaluator may defer target-value checks until after preflight.
     """
     dataset = fetch_ucirepo(id=DATASET_ID)
     if dataset.metadata.get("uci_id") != DATASET_ID:
         raise ValueError("Unexpected UCI dataset ID")
     features, targets = dataset.data.features, dataset.data.targets
-    validate_dataset(features, targets)
+    validate_dataset(features, targets, check_target_values=check_target_values)
     return PhishingDataset(features.copy(), targets["result"].copy(), dict(dataset.metadata))
 
 

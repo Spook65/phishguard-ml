@@ -25,15 +25,18 @@ def feature_groups(features: pd.DataFrame) -> np.ndarray:
     return pd.MultiIndex.from_frame(features).factorize(sort=False)[0]
 
 
-def split_dataset(dataset: PhishingDataset, *, seed: int = SEED) -> SplitIndices:
+def split_dataset(dataset: PhishingDataset, *, seed: int = SEED, check_target_values=True) -> SplitIndices:
     """Target 70/15/15 by assigning whole feature groups.
 
     GroupShuffleSplit samples groups, so row fractions are approximate. Targets
     are validated but never used to construct groups or choose partitions.
     The held-out test is chosen first and is not used for later tuning.
+    The final evaluator can defer target-value checks before its preflight;
+    target values never affect the group assignment.
     """
     features, target = dataset.features, dataset.target
-    validate_dataset(features, target.to_frame(), expected_rows=len(features))
+    validate_dataset(features, target.to_frame(), expected_rows=len(features),
+                     check_target_values=check_target_values)
     groups = feature_groups(features)
     positions = np.arange(len(features))
     first = GroupShuffleSplit(n_splits=1, test_size=0.15, random_state=seed)

@@ -1,0 +1,170 @@
+{
+  "preflight": {
+    "source_id": 327,
+    "source_name": "Phishing Websites",
+    "rows": 11055,
+    "features": 30,
+    "seed": 42,
+    "positive_label": -1,
+    "confusion_label_order": [
+      -1,
+      1
+    ],
+    "model_names": [
+      "majority",
+      "tree_depth_5",
+      "tree_unrestricted",
+      "knn_k_9"
+    ],
+    "fit_partition": "train",
+    "row_counts": {
+      "train": 7676,
+      "validation": 1629,
+      "test": 1750
+    },
+    "feature_group_counts": {
+      "train": 4049,
+      "validation": 868,
+      "test": 868
+    },
+    "all_rows_assigned_once": true,
+    "feature_groups_isolated": true
+  },
+  "leading_model_selected_on_validation": "knn_k_9",
+  "results": [
+    {
+      "model": "majority",
+      "accuracy": 0.5525714285714286,
+      "phishing_precision": 0.0,
+      "phishing_recall": 0.0,
+      "phishing_f1": 0.0,
+      "confusion_matrix": [
+        [
+          0,
+          783
+        ],
+        [
+          0,
+          967
+        ]
+      ],
+      "prediction_seconds": 0.0002928749890998006
+    },
+    {
+      "model": "tree_depth_5",
+      "accuracy": 0.9211428571428572,
+      "phishing_precision": 0.9561527581329562,
+      "phishing_recall": 0.8633461047254151,
+      "phishing_f1": 0.9073825503355705,
+      "confusion_matrix": [
+        [
+          676,
+          107
+        ],
+        [
+          31,
+          936
+        ]
+      ],
+      "prediction_seconds": 0.0005335839814506471
+    },
+    {
+      "model": "tree_unrestricted",
+      "accuracy": 0.92,
+      "phishing_precision": 0.900373599003736,
+      "phishing_recall": 0.9233716475095786,
+      "phishing_f1": 0.9117276166456494,
+      "confusion_matrix": [
+        [
+          723,
+          60
+        ],
+        [
+          80,
+          887
+        ]
+      ],
+      "prediction_seconds": 0.0006496669957414269
+    },
+    {
+      "model": "knn_k_9",
+      "accuracy": 0.9251428571428572,
+      "phishing_precision": 0.9346666666666666,
+      "phishing_recall": 0.8952745849297573,
+      "phishing_f1": 0.9145466405740378,
+      "confusion_matrix": [
+        [
+          701,
+          82
+        ],
+        [
+          49,
+          918
+        ]
+      ],
+      "prediction_seconds": 0.30162162496708333
+    }
+  ],
+  "validation_comparison": [
+    {
+      "model": "majority",
+      "validation": {
+        "accuracy": 0.578268876611418,
+        "phishing_precision": 0.0,
+        "phishing_recall": 0.0,
+        "phishing_f1": 0.0
+      },
+      "test_minus_validation": {
+        "accuracy": -0.025697448039989412,
+        "phishing_precision": 0.0,
+        "phishing_recall": 0.0,
+        "phishing_f1": 0.0
+      }
+    },
+    {
+      "model": "tree_depth_5",
+      "validation": {
+        "accuracy": 0.9386126457949663,
+        "phishing_precision": 0.9819376026272578,
+        "phishing_recall": 0.8704512372634643,
+        "phishing_f1": 0.9228395061728395
+      },
+      "test_minus_validation": {
+        "accuracy": -0.01746978865210913,
+        "phishing_precision": -0.02578484449430163,
+        "phishing_recall": -0.00710513253804923,
+        "phishing_f1": -0.015456955837269026
+      }
+    },
+    {
+      "model": "tree_unrestricted",
+      "validation": {
+        "accuracy": 0.9355432780847146,
+        "phishing_precision": 0.9121813031161473,
+        "phishing_recall": 0.9374090247452693,
+        "phishing_f1": 0.9246231155778895
+      },
+      "test_minus_validation": {
+        "accuracy": -0.015543278084714562,
+        "phishing_precision": -0.011807704112411277,
+        "phishing_recall": -0.014037377235690762,
+        "phishing_f1": -0.012895498932240068
+      }
+    },
+    {
+      "model": "knn_k_9",
+      "validation": {
+        "accuracy": 0.954573357888275,
+        "phishing_precision": 0.9609022556390977,
+        "phishing_recall": 0.9301310043668122,
+        "phishing_f1": 0.9452662721893491
+      },
+      "test_minus_validation": {
+        "accuracy": -0.029430500745417865,
+        "phishing_precision": -0.026235588972431056,
+        "phishing_recall": -0.034856419437054864,
+        "phishing_f1": -0.030719631615311327
+      }
+    }
+  ]
+}
